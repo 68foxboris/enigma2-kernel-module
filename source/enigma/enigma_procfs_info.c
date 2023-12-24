@@ -515,9 +515,9 @@ int get_enigma_fhdskin(struct seq_file *m, void* data)
 
 int get_enigma_dboxlcd(struct seq_file *m, void* data)
 {
-	seq_printf(m, "@HAVE_DBOXLCD@\n");
+	seq_printf(m, "@SUPPORT_DBOXLCD@\n");
 #ifdef DEBUG
-	printk(KERN_INFO "dboxlcd=@HAVE_DBOXLCD@\n");
+	printk(KERN_INFO "dboxlcd=@SUPPORT_DBOXLCD@\n");
 #endif
 	return 0;
 }
@@ -626,7 +626,7 @@ int get_enigma_allinfo(struct seq_file *m, void* data)
 	seq_printf(m, "ci=@HAVE_CI@\n");
 	seq_printf(m, "vfdsymbol=@HAVE_VFDSYMBOL@\n");
 	seq_printf(m, "fhdskin=@HAVE_FHDSKIN@\n");
-	seq_printf(m, "dboxlcd=@HAVE_DBOXLCD@\n");
+	seq_printf(m, "dboxlcd=@SUPPORT_DBOXLCD@\n");
 	seq_printf(m, "imageversion=@DISTRO_VERSION@\n");
 	seq_printf(m, "imagebuild=@BUILD_VERSION@\n");
 	seq_printf(m, "imagedevbuild=@DEVELOPER_BUILD_VERSION@\n");
@@ -690,7 +690,7 @@ int get_enigma_allinfo(struct seq_file *m, void* data)
 	printk(KERN_INFO "ci=@HAVE_CI@\n");
 	printk(KERN_INFO "vfdsymbol=@HAVE_VFDSYMBOL@\n");
 	printk(KERN_INFO "fhdskin=@HAVE_FHDSKIN@\n");
-	printk(KERN_INFO "dboxlcd=@HAVE_DBOXLCD@\n");
+	printk(KERN_INFO "dboxlcd=@SUPPORT_DBOXLCD@\n");
 	printk(KERN_INFO "imageversion=@DISTRO_VERSION@\n");
 	printk(KERN_INFO "imagebuild=@BUILD_VERSION@\n");
 	printk(KERN_INFO "imagedevbuild=@DEVELOPER_BUILD_VERSION@\n");
